@@ -14,7 +14,7 @@ namespace Sistema_de_Relacionamento_com_o_Cliente
     {
         private static SqlConnection con;
         private static SqlCommand cmd;
-        private static String provedor = "datasource=localhost;port=3306;username=root;password=Edri09ano";
+        private static String provedor = "datasource=localhost;port=3306;username=root;password=****";
 
 
         public static SqlConnection Conexao(Boolean x) {
