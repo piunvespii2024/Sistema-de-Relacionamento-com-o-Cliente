@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D6AC380-BD20-4872-B7F8-4F41753382FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema_de_Relacionamento_com_o_Cliente</RootNamespace>
+    <AssemblyName>Sistema de Relacionamento com o Cliente</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Sistema_de_Relacionamento_com_o_Cliente.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banco.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="frmConsultaCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaCli.Designer.cs">
+      <DependentUpon>frmConsultaCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlterStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterStatus.Designer.cs">
+      <DependentUpon>frmAlterStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastro.Designer.cs">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelAniversario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelAniversario.Designer.cs">
+      <DependentUpon>frmRelAniversario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelCodigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelCodigo.Designer.cs">
+      <DependentUpon>frmRelCodigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelNome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelNome.Designer.cs">
+      <DependentUpon>frmRelNome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSobre.Designer.cs">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmConsultaCli.resx">
+      <DependentUpon>frmConsultaCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlterStatus.resx">
+      <DependentUpon>frmAlterStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastro.resx">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelAniversario.resx">
+      <DependentUpon>frmRelAniversario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelCodigo.resx">
+      <DependentUpon>frmRelCodigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelNome.resx">
+      <DependentUpon>frmRelNome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSobre.resx">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\119781_Papel-de-Parede-Simbolo-do-Batman_1280x800.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
