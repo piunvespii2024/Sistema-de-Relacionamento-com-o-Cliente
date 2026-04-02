@@ -23,7 +23,7 @@ namespace Sistema_de_Relacionamento_com_o_Cliente
                 con = new SqlConnection(provedor) ;
                 con.Open();
                 return con;
-                provedor = "localhost;port=3306;username=root;password=Edri09ano";
+                provedor = "localhost;port=3306;username=root;password=";
             }
             else if (con != null && !x && con.State != ConnectionState.Closed ) con.Close(); 
             return null;
